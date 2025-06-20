@@ -17,16 +17,6 @@ const tabList = [
   },
   {
     id: 2,
-    name: "Experience",
-    value: "experience",
-  },
-  {
-    id: 3,
-    name: "Education",
-    value: "education",
-  },
-  {
-    id: 4,
     name: "Skills",
     value: "skills",
   },

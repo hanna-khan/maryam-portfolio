@@ -29,7 +29,7 @@ const Home = () => {
       <MarqueeWapper direction="left" images={images} />
       <About />
       <MarqueeWapper direction="right" images={images2} />
-      <Awards />
+      {/* <Awards /> */}
       <Projects />
       <Metting />
       <Services isHeading={true} />

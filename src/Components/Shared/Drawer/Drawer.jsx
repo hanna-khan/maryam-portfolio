@@ -35,23 +35,6 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
               <Link className="textp"> matias999@.com </Link>
             </div>
           </div>
-          <div className="sub__contac-item">
-            <div className="content">
-              <span className="address d-block"> call now </span>
-              <Link className="textp"> +98 4758 2154 021 </Link>
-            </div>
-          </div>
-        </div>
-        <div className="sub__contact-right mb-80 position-relative">
-          <ul className="social d-flex gap-3">
-            {socialIcons.map(({ icon, id }) => (
-              <li key={id}>
-                <Link>
-                  <i>{icon}</i>
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
         <Link
           to={""}

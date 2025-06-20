@@ -8,7 +8,7 @@ import {
 } from "react-bootstrap-icons";
 
 import { Link } from "react-router-dom";
-import personalInfoThumb from "../../assets/img/about/personal-infothumb.png";
+import personalInfoThumb from "../../assets/img/logo/profile.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -50,7 +50,9 @@ const AboutMe = ({ isTabActive }) => {
               data-aos="zoom-in"
               data-aos-duration="500"
             >
-              <img src={personalInfoThumb} alt="img" />
+              <img
+                style={{ width: '300px', display: 'block', margin: 'auto', marginTop: '1rem' }}
+                src={personalInfoThumb} alt="img" />
             </div>
           </div>
           <div className="col-lg-7">
