@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 import { List, ArrowRight } from "react-bootstrap-icons";
 
 import Drawer from "../Drawer/Drawer";
-import logo from "../../../assets/img/logo/logo.png";
+import logo from "../../../assets/img/logo/favicon.png";
 
 const menuList = [
   {
@@ -90,7 +90,9 @@ const Header = () => {
         <div className="header-wrapper">
           <div className="main__logo">
             <Link to={"/"} className="logo">
-              <img src={logo} alt="logo" />
+              <img
+                style={{ width: '50px' }}
+                src={logo} alt="logo" />
             </Link>
           </div>
           <ul className={`main-menu ${menuActive ? "active" : ""}`}>
@@ -101,7 +103,7 @@ const Header = () => {
                     {name}
                   </HashLink>
                   {dropDown?.length && (
-                    <ul className={`sub-menu ${dropDownId === id ? "sub-menu_active":""}`}>
+                    <ul className={`sub-menu ${dropDownId === id ? "sub-menu_active" : ""}`}>
                       {dropDown.map(({ id, name, path }) => {
                         return (
                           <li key={id}>

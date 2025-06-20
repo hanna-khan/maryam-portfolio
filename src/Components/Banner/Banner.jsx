@@ -10,7 +10,7 @@ import {
   PlayFill,
 } from "react-bootstrap-icons";
 
-import bannerMan from "../../assets/img/banner/banner-man.png";
+import bannerMan from "../../assets/img/logo/profile.png";
 import scrollDown from "../../assets/img/banner/scroll-down.png";
 import dial from "../../assets/img/banner/dial.png";
 import bnArrow from "../../assets/img/banner/bn-arrow.png";
@@ -54,9 +54,29 @@ const Banner = () => {
 
   return (
     <section id="home">
-      <div className="container">
-        <div className="row g-4">
-          <div className="col-lg-8">
+      <div
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          padding: "20px",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            gap: "20px",
+            alignItems: "flex-start",
+          }}
+        >
+          {/* Left Side - Content */}
+          <div
+            style={{
+              flex: "1 1 60%",
+              minWidth: "300px",
+            }}
+          >
             <div className="banner__content">
               <Link to={""} className="bn__currently">
                 <span className="d-block">
@@ -84,13 +104,35 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
-            <div
-              className={`banner__thumb  ${position ? "right_up_animat" : "right_up"
-                }`}
 
+          {/* Right Side - Image */}
+          <div
+            style={{
+              flex: "1 1 35%",
+              minWidth: "250px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "flex-end",
+              margin: "auto",
+              marginLeft: "2rem"
+            }}
+
+          >
+            <div
+              style={{
+                animation: position ? "fadeInUp 1s ease-in-out" : "none",
+                transition: "all 0.3s ease-in-out",
+              }}
             >
-              <img src={bannerMan} alt="man-img" />
+              <img
+                src={bannerMan}
+                alt="man-img"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  marginBottom: "20px",
+                }}
+              />
             </div>
           </div>
         </div>
@@ -100,7 +142,6 @@ const Banner = () => {
           <Link to={""}>
             <img src={dial} alt="img" />
           </Link>
-          <Link to={""}>(+02)-574-328-301</Link>
         </div>
         <div className="right__infoscroll">
           <Link className="scroll">
@@ -111,7 +152,7 @@ const Banner = () => {
           </Link>
         </div>
       </div>
-      <div className="banner__rightinfo">
+      {/* <div className="banner__rightinfo">
         <div className="right__infoscroll">
           <Link to={""} className="scroll">
             Follow Me
@@ -133,7 +174,7 @@ const Banner = () => {
             })}
           </ul>
         </div>
-      </div>
+      </div> */}
       {lightboxOpen && (
         <VideoPlay
           setLightboxOpen={setLightboxOpen}

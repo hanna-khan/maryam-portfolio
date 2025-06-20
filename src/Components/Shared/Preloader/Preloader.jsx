@@ -1,5 +1,5 @@
 import React from "react";
-import manimg from "../../../assets/img/banner/banner-man.png";
+import manimg from "../../../assets/img/logo/profile.png";
 const Preloader = () => {
   return (
     <div className="preloader__matias">

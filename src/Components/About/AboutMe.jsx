@@ -94,7 +94,7 @@ const AboutMe = ({ isTabActive }) => {
                             </span>
                             <Link to={""}>{contact}</Link>
                             {socalContact && (
-                              <ul className="d-flex align-items-center gap-2 gap-xl-4">
+                              <ul className="d-flex align-items-center gap-1 gap-xl-4">
                                 {socalContact.map((info, index) => (
                                   <li key={index}>
                                     <Link to={""}>{info} </Link>
