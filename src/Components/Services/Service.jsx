@@ -14,15 +14,15 @@ const Service = ({ heading, subHeading, para, id }) => {
           <div className="cont">
             <h5>{subHeading}</h5>
             <h2>
-              <Link to={"/service-details"}> {heading} </Link>
+              <Link> {heading} </Link>
             </h2>
           </div>
         </div>
         <p className="pra">{para}</p>
       </div>
-      <Link to={"/service-details"} className="common__icon">
+      {/* <Link to={"/service-details"} className="common__icon">
         <ArrowUpRight className="i" />
-      </Link>
+      </Link> */}
     </div>
   );
 };

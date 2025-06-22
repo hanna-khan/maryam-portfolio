@@ -29,27 +29,15 @@ const menuList = [
     path: "/",
     section: "#services",
     name: "Services",
-    dropDown: [
-      {
-        id: 1,
-        path: "/all-services",
-        name: "Services",
-      },
-      {
-        id: 2,
-        path: "/service-details",
-        name: "Service Details",
-      },
-    ],
   },
+  // {
+  //   id: 5,
+  //   path: "/",
+  //   section: "#testimonial",
+  //   name: "Testimonial",
+  // },
   {
     id: 5,
-    path: "/",
-    section: "#testimonial",
-    name: "Testimonial",
-  },
-  {
-    id: 6,
     path: "/contact",
     name: "Contact",
   },

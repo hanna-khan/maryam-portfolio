@@ -22,10 +22,10 @@ export const router = createBrowserRouter([
         path: "/all-services",
         element: <AllServices />,
       },
-      {
-        path: "/service-details",
-        element: <ServiceDetails />,
-      },
+      // {
+      //   path: "/service-details",
+      //   element: <ServiceDetails />,
+      // },
       {
         path: "/all-blog",
         element: <AllBlogs />,
