@@ -18,10 +18,8 @@ const Home = () => {
   const [isFetching, setIsFetching] = useState(true);
   const services = [
     "Web Development",
-    "CRM & SAAS Development",
-    "Web UI/UX Design",
-    "E-commerce Development",
     "Webflow Development",
+    "Web UI/UX Design",
   ];
 
 
