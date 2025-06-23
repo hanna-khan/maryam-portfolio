@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ScrollRestoration } from "react-router-dom";
 
-import { images, images2 } from "../Utlits/marqueeItems";
+import { images } from "../Utlits/marqueeItems";
 import About from "../Components/About/About";
 import Projects from "../Components/Projects/Projects";
 import Metting from "../Components/Metting/Metting";
@@ -16,6 +16,14 @@ import Preloader from "../Components/Shared/Preloader/Preloader";
 
 const Home = () => {
   const [isFetching, setIsFetching] = useState(true);
+  const services = [
+    "Web Development",
+    "CRM & SAAS Development",
+    "Web UI/UX Design",
+    "E-commerce Development",
+    "Webflow Development",
+  ];
+
 
   useEffect(() => {
     setTimeout(function () {
@@ -26,9 +34,8 @@ const Home = () => {
   return (
     <>
       {isFetching && <Preloader />}
-      <MarqueeWapper direction="left" images={images} />
+      <MarqueeWapper direction="left" items={services} />;
       <About />
-      <MarqueeWapper direction="right" images={images2} />
       {/* <Awards /> */}
       <Projects />
       <Metting />
@@ -36,7 +43,7 @@ const Home = () => {
       <WorkeProcess />
       {/* <Testimonial /> */}
       {/* <Blogs /> */}
-      <ScrollRestoration/>
+      <ScrollRestoration />
     </>
   );
 };

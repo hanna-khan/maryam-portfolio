@@ -93,15 +93,6 @@ const Banner = () => {
                   That Solve Real Problems
                 </span>
               </h1>
-              <div className="video__area">
-                <img src={bnArrow} className="vid__arrow" alt="img" />
-                <div onClick={openLightbox} className="video__80 video-btn">
-                  <i>
-                    <PlayFill />
-                  </i>
-                </div>
-                <span className="proces">Work Process</span>
-              </div>
             </div>
           </div>
 

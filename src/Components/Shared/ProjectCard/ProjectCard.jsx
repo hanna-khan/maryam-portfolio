@@ -11,7 +11,6 @@ const ProjectCard = ({
   navigate,
   notes
 }) => {
-  console.log('notes', notes)
   return (
     <div
       className={`project__item  ${index !== 2 && "cus__mb60"}`}
