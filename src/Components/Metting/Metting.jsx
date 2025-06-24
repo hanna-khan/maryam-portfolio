@@ -32,7 +32,7 @@ const Metting = () => {
             </span>
             <span className="box">
               <span className="ptext fz-18 mb-1 d-block"> Email </span>
-              <a href="#0"> devwithmariam@gmail.com </a>
+              <a href="#0" style={{ textTransform:"lowercase" }}> devwithmariam@gmail.com </a>
             </span>
           </div>
           <div

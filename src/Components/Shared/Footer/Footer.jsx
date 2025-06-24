@@ -39,7 +39,7 @@ const Footer = () => {
                   Hello, I’m Maryam, Website & User Interface Designer
                   based in Islamabad, Pakistan.
                 </p>
-                <a href="#0">devwithmariam@gmail.com</a>
+                <a style={{ textTransform: "lowercase" }} href="#0">devwithmariam@gmail.com</a>
               </div>
             </div>
             {/* <div className="col-lg-6">
@@ -65,20 +65,13 @@ const Footer = () => {
         <div className="container">
           <div className="copyright">
             <p className="white">
-              Copyright © 2023 {" "}
+              Copyright © 2025 {" "}
               <Link to={"/"} className="base">
                 Maryam.
               </Link>{" "}
               All rights reserved.
             </p>
-            <ul className="terms">
-              <li>
-                <a href="#0"> Terms & Condition </a>
-              </li>
-              <li>
-                <a href="#0"> Privacy Policy </a>
-              </li>
-            </ul>
+
             <a href="#about" className="toparrow">
               <i>
                 <ArrowUpShort />

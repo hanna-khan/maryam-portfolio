@@ -21,7 +21,7 @@ const contactInfo = [
   },
   {
     id: 2,
-    system: "Phone",
+    system: "Location",
     contact: "Islamabad, Pakistan",
   },
   // {
@@ -92,7 +92,9 @@ const AboutMe = ({ isTabActive }) => {
                             <span className="ptext fz-18 mb-20 d-block">
                               {system}
                             </span>
-                            <Link to={""}>{contact}</Link>
+                            <Link to={""}
+                              style={{ textTransform: "lowercase" }}
+                            >{contact}</Link>
                             {socalContact && (
                               <ul className="d-flex align-items-center gap-1 gap-xl-4">
                                 {socalContact.map((info, index) => (

@@ -20,6 +20,9 @@ const Home = () => {
     "Web Development",
     "Webflow Development",
     "Web UI/UX Design",
+    "Web Development",
+    "Webflow Development",
+    "Web UI/UX Design",
   ];
 
 

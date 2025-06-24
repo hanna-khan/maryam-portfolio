@@ -17,7 +17,7 @@ const Contact = () => {
             <h4 className="mb-30">Feel free to contact me anytime</h4>
             <div className="contact__item mb-20">
               <span className="he1">Email</span>
-              <a href="#0">devwithmariam@gmail.com</a>
+              <a href="#0" style={{ textTransform:"lowercase" }}>devwithmariam@gmail.com</a>
             </div>
             <div className="contact__item">
               <span className="he1">Address</span>

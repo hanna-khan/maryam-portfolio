@@ -125,19 +125,19 @@ const Header = () => {
               <span></span>
               <span></span>
             </div>
-            <div
+            {/* <div
               onClick={() => setIsSidebarActive(true)}
               className="remove__click"
             >
               <List className="icon" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <Drawer
+      {/* <Drawer
         isSidebarActive={isSidebarActive}
         setIsSidebarActive={setIsSidebarActive}
-      />
+      /> */}
     </header>
   );
 };

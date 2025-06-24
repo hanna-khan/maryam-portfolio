@@ -78,7 +78,7 @@ const Banner = () => {
             }}
           >
             <div className="banner__content">
-              <Link to={""} className="bn__currently">
+              <Link style={{ color: "#c9f31d", fontWeight: "bold", fontSize:"1.8rem" }} to={""} className="bn__currently">
                 <span className="d-block">
                   Currently available for freelance
                 </span>
@@ -128,7 +128,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="banner__leftinfo">
+      {/* <div className="banner__leftinfo">
         <div className="left__infomobile">
           <Link to={""}>
             <img src={dial} alt="img" />
@@ -142,7 +142,7 @@ const Banner = () => {
             <img src={scrollDown} alt="img" />
           </Link>
         </div>
-      </div>
+      </div> */}
       {/* <div className="banner__rightinfo">
         <div className="right__infoscroll">
           <Link to={""} className="scroll">
