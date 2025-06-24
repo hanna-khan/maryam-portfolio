@@ -93,7 +93,7 @@ const AboutMe = ({ isTabActive }) => {
                               {system}
                             </span>
                             <Link to={""}
-                              style={{ textTransform: "lowercase" }}
+                              style={{ textTransform: "lowercase", fontSize: "1rem" }}
                             >{contact}</Link>
                             {socalContact && (
                               <ul className="d-flex align-items-center gap-1 gap-xl-4">
